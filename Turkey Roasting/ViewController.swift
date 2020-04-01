@@ -22,19 +22,19 @@ class ViewController: UIViewController {
         
         
         
-        let turkeyWeightInPounds: Int = 9
+        let turkeyWeightInPounds: Int = 5
         
         
         
-        if turkeyWeightInPounds >= 4 || turkeyWeightInPounds <= 6 {
+        if turkeyWeightInPounds >= 4 && turkeyWeightInPounds <= 6 {
             textView.text = "\n\n\nFor a \(turkeyWeightInPounds)lb turkey it would take from 1hr and 30 mins to 2hrs and 15mins to roast "
         }
         
-        if turkeyWeightInPounds >= 6 || turkeyWeightInPounds <= 8 {
+        else if turkeyWeightInPounds >= 6 && turkeyWeightInPounds <= 8 {
             textView.text = "\n\n\nFor a \(turkeyWeightInPounds)lb turkey it would take from 2hrs and 15 mins to 3hrs and 15mins to roast "
         }
         
-        if turkeyWeightInPounds < 4 || turkeyWeightInPounds > 8 {
+        else {
             textView.text = "\n\n\nThis \(turkeyWeightInPounds)lb turkey is either too small to feed everyone or too big to fit in the oven."
         }
         
